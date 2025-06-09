@@ -37,7 +37,7 @@ def getenv(key, default=None):
 
 API_ID = int(getenv("API_ID", ""))
 
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("API_HASH", "")
 
 
 # Get it from @Botfather in Telegram.
@@ -65,7 +65,7 @@ DURATION_LIMIT_MIN = int(
 )  # Remember to give value in Minutes
 
 
-EXTRA_PLUGINS = is_bool(getenv("EXTRA_PLUGINS", "False"))
+EXTRA_PLUGINS = is_bool(getenv("EXTRA_PLUGINS", "True"))
 
 # Fill False if you Don't want to load extra plugins
 
@@ -84,11 +84,11 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Group ID or USERNAME for this.
-LOG_GROUP_ID = getenv("LOG_GROUP_ID", "").strip()
+LOG_GROUP_ID = getenv("LOG_GROUP_ID", "7972564910").strip()
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6815918609").split())
+    map(int, getenv("OWNER_ID", "-1002783953477").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
