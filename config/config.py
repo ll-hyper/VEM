@@ -35,9 +35,9 @@ def getenv(key, default=None):
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "27385006"))
 
-API_HASH = getenv("API_HASH", "")
+API_HASH = getenv("API_HASH", "a8930bb5641bdc5c5b745753e0c508b1")
 
 
 # Get it from @Botfather in Telegram.
@@ -88,7 +88,7 @@ LOG_GROUP_ID = getenv("LOG_GROUP_ID", "7972564910").strip()
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "-1002783953477").split())
+    map(int, getenv("OWNER_ID", "-1002736487208").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -211,17 +211,17 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://iili.io/FFhEFiF.md.jpg",
+    "https://iili.io/FqPyORS.md.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://iili.io/FFh0aBn.md.jpg",
+    "https://iili.io/FqPy40x.md.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://iili.io/FFhltz7.md.jpg",
+    "https://iili.io/Fqi9KzX.md.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
